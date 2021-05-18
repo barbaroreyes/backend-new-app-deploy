@@ -11,7 +11,7 @@ router.post('/',async(req,res) => {
 router.put('/:id',async(req,res) => {
   res.json(await SevenW.findByIdAndUpdate(req.params.id, req.body,{ new: true }))
 });
-router.put('/:id',async(req,res) => {
+router.delete('/:id',async(req,res) => {
   res.json(await SevenW.findByIdAndRemove(req.params.id))
 });
 
