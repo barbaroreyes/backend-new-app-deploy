@@ -2,7 +2,17 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("./db/connection");
 const app = express();
-const PORT = 3001
+const PORT = process.env.PORT
+//imports
+const cors = require("cors")
+const morgan = require("morgan")
+
+//midleware
+app.use(cors())
+app.use(express.json)
+app.use(morgan('dev'))
+
+
 
 
 
