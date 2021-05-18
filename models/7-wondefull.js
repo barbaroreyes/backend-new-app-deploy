@@ -2,7 +2,7 @@ const mongoose = require('../db/connection')
 const Schema = mongoose.Schema
 const sevenWSchema = new Schema({
     name: String,
-    url: String,
+    img: String,
     description: String,
 
 },{timestamps:true}
